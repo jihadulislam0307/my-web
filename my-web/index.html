@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>আমার ওয়েবসাইট</title>
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+
+  <!-- 🔹 Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#">হোম</a></li>
+      <li><a href="about.html">আমাদের সম্পর্কে</a></li>
+      <li><a href="blog.html">ব্লগ</a></li>
+      <li><a href="#contact">যোগাযোগ</a></li>
+
+
+
+
+
+
+      <button id="darkModeToggle">🌙 ডার্ক মোড চালু করুন</button>
+
+
+
+    </ul>
+  </nav>
+
+  <!-- 🔹 Main Content -->
+  <h1>স্বাগতম!</h1>
+  <p>এটা আমার প্রথম ওয়েবসাইট।</p>
+  <button onclick="greet()">ক্লিক করুন</button>
+
+  <!-- 🔻 Gallery Section -->
+  <section id="gallery">
+    <h2>আমাদের ছবি গ্যালারি</h2>
+    <div class="gallery">
+      <img src="images/photo1.jpg" alt="ছবি ১">
+      <img src="images/photo2.jpg" alt="ছবি ২">
+      <img src="images/photo3.jpg" alt="ছবি ৩">
+    </div>
+  </section>
+
+  <!-- 🔻 Blog Section -->
+  <section id="blog">
+    <h2>সাম্প্রতিক ব্লগ পোস্ট</h2>
+
+    <article class="blog-post">
+      <h3>ওয়েব ডেভেলপমেন্ট শেখার শুরু</h3>
+      <p>HTML, CSS এবং JavaScript দিয়ে কিভাবে ওয়েবসাইট বানানো যায় – তার একটি সহজ সূচনা।</p>
+      <a href="blog.html">আরও পড়ুন...</a>
+
+    </article>
+
+    <article class="blog-post">
+      <h3>CSS দিয়ে ডিজাইন কাস্টমাইজ করা</h3>
+      <p>CSS দিয়ে কিভাবে একটি সুন্দর ও মোবাইল-ফ্রেন্ডলি ডিজাইন করা যায় তা দেখানো হয়েছে।</p>
+      <a href="blog.html">আরও পড়ুন...</a>
+
+
+
+
+    </article>
+  </section>
+
+
+
+  <!-- 🔹 Contact Form -->
+  <section id="contact">
+    <h2>যোগাযোগ করুন</h2>
+    <form onsubmit="return submitForm()">
+      <input type="text" placeholder="আপনার নাম" required>
+      <input type="email" placeholder="আপনার ইমেইল" required>
+      <textarea placeholder="আপনার বার্তা" required></textarea>
+      <button type="submit">পাঠান</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+  <!-- 🔻 Footer -->
+  <footer>
+    <p>© 2025 আমার ওয়েবসাইট | তৈরি করেছেন আপনি 😊</p>
+  </footer>
+
+</body>
+
+</html>
